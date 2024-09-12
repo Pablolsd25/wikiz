@@ -1,0 +1,50 @@
+/* src/components/PlanetCarousel.css */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Ajusta el tamaño máximo del carrusel */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.planet-item {
+  text-align: center;
+  flex-shrink: 0; /* Evita que el ítem se reduzca */
+}
+
+.planet-image {
+  border-radius: 50%; /* Hace la imagen circular */
+  width: 150px; /* Ajusta el tamaño de la imagen */
+  height: 150px;
+  object-fit: cover; /* Ajusta el ajuste de la imagen */
+  transition: transform 0.3s ease;
+}
+
+.carousel button {
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+  z-index: 1; /* Asegura que los botones estén sobre el contenido */
+}
+
+.carousel button:hover {
+  background-color: #bbb;
+}
+
+.carousel button:focus {
+  outline: none;
+}
